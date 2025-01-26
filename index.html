@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1a87fbbb7a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="searchbar">
+            <input type="text" placeholder="Search City..." id="search-input">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        </div>
+        <div class="main-data">
+            <div class="time">Saturday, 19 March 2025</div>
+            <div class="weather-info">
+                <img src="assets/Clouds.png" alt="weather icon" class="weather-icon">
+                <div class="detail">
+                    <h2 class="temp">27°</h2>
+                    <div>
+                        <p class="city">New York, USA</p>
+                        <p class="condition">Partly Cloudy</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="additional-info">
+                <div class="col">
+                    <div class="left">
+                        <p><span class="humidity">65</span>%</p>
+                        <p>Humidity</p>
+                    </div>
+                    <i class="fa-solid fa-water"></i>
+                </div>
+                <div class="col">
+                    <div class="left">
+                        <p><span class="wind-speed">10</span> mph</p>
+                        <p>Wind Speed</p>
+                    </div>
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+            </div>
+        </div>
+        <p class="error-msg">City Not Found</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
